@@ -1,5 +1,7 @@
 # Configuration Path Package (configpath)
 
+[![GoDoc Widget]][GoDoc]
+
 `configpath` package is designed to serve as an Operating System (OS) - independent way to determine appropriate paths
 for configuration folders and files. It supports different paths depending on the OS (Unix, Darwin, Windows) and follows
 the conventions specific to each system.
@@ -17,7 +19,7 @@ import "github.com/FirinKinuo/configpath"
 
 func main() {
 	configPath := configpath.ConfigPath{
-		Vendor: "TestVendor",
+		Vendor:      "TestVendor",
 		Application: "TestApplication",
 	}
 
@@ -125,7 +127,7 @@ import "github.com/FirinKinuo/configpath"
 
 func main() {
 	cp := configpath.ConfigPath{
-		Application: "TestApplication",
+		Application:      "TestApplication",
 		CustomFolderPath: "/custom/path",
 	}
 
@@ -139,3 +141,6 @@ Copyright (c) [Firin Kinuo](https://fkinuo.ru)
 
 Licensed under [MIT License](./LICENSE)
 
+[GoDoc]: https://pkg.go.dev/github.com/FirinKinuo/configpath
+
+[GoDoc Widget]: https://godoc.org/github.com/FirinKinuo/configpath?status.svg
